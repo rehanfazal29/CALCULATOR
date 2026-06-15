@@ -1,0 +1,283 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #E3D7D5;
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  height: 100%;
+  width: auto;
+  
+   
+   
+}
+
+.mainbody{
+    
+    height:auto ;
+    width: 40vw ;
+    background-color: white;
+    border: 3px solid  goldenrod;
+    border-radius: 20px;
+    margin: 50px 50px 50px 50px;
+    
+ 
+}
+.theam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+
+}
+.theam button{
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 3px;
+    color:goldenrod;
+    border-radius: 25px;
+    background-color:white;
+    border: 2px solid goldenrod ;
+    cursor: pointer;
+
+}
+.mainscreen{
+    display:inline;
+    align-items:center;
+    justify-content: center;
+    height: 20vh;
+    width: auto;
+    margin: 10%;
+    
+
+
+}
+.box{
+    width: auto;
+}
+.currentCalculation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid goldenrod;
+    padding: 2rem 0 ;
+    margin-left: 0 20px ;
+    border-radius: 15px;
+    width: 90%;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    left: 0.9rem;
+    
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding:10px;
+    border-bottom: 2px solid goldenrod;
+
+}
+.twobtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid  goldenrod;
+    margin: 0 30px   ;
+    
+
+}
+.twobtn button{
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid goldenrod;
+    border-radius: 25px;
+    font-weight: 700 ;
+    cursor: pointer;
+    
+}
+.button{
+display: flexbox;
+flex-direction: column;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 27px;
+
+}
+.first button {
+  padding: 1rem;
+  font-size: 1rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  font-weight: 700 ;
+  background-color: white;
+    border: 2px solid goldenrod;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.answer button{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 700 ;
+    color: rgb(97, 110, 77);
+    border: 2px solid goldenrod;
+    cursor: pointer;
+
+}
+.size{
+   color:red;
+   font-weight: bolder;
+   font-size: larger;
+}
+ */
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3D7D5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.mainbody {
+    width: 100%;
+    max-width: 500px;
+
+    background-color: white;
+    border: 3px solid goldenrod;
+    border-radius: 20px;
+
+    padding: 15px;
+}
+
+.theam {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theam button,
+.twobtn button,
+.answer button,
+.first button {
+    cursor: pointer;
+    border: 2px solid goldenrod;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 700;
+}
+
+.theam button {
+    padding: 8px 15px;
+    color: goldenrod;
+}
+
+.currentCalculation {
+    width: 100%;
+
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+
+    outline: none;
+}
+
+.result {
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+
+    border-bottom: 2px solid goldenrod;
+}
+
+.twobtn {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0;
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid goldenrod;
+}
+
+.twobtn button {
+    padding: 10px 20px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0;
+}
+
+.first button {
+    width: 60px;
+    height: 60px;
+
+    font-size: 1.1rem;
+}
+
+.answer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.answer button {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+
+    .currentCalculation {
+        font-size: 1.5rem;
+    }
+
+    .first button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .twobtn button,
+    .answer button {
+        padding: 8px 15px;
+    }
+}
